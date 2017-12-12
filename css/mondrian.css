@@ -1,0 +1,29 @@
+.frame { position: relative; overflow: hidden; margin: auto; }  /* Optional */
+.window { position: relative; display: inline-block; }
+.window>* { float: left; }
+.window>*>* { cursor: pointer;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+body { padding: 20px; text-align: center; }
+
+.frame { width: 790px; border: solid 20px black; border-bottom-width: 10px; background-color: black; }
+.window { top: -5px; left: -5px; width: 800px; }
+.window>* { height: 60px; width: 25%; }
+.window>*>* { height: 50px; margin: 5px; }
+.window>.slidDown { height: 120px; }
+.window>.slidDown>* { height: 110px; }
+
+.blue>* { background-color: blue; }
+.red>* { background-color: red; }
+.yellow>* { background-color: yellow; }

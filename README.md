@@ -1,2 +1,1 @@
-# myfirstrepo
-CTO Challenge Repo
+# This is my README
