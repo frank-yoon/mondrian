@@ -3,13 +3,11 @@ name: CI
 on: [issues]
 
 jobs:
-  build:
+  notification:
 
     runs-on: ubuntu-latest
 
     steps:
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
+    - name: Run a single-line script
       run: |
         curl -H "Content-Type: application/json" -d "{\"text\": \"Hello World\"}" https://outlook.office.com/webhook/0eca7c20-d3a6-4c15-969d-078ea42c46a1@0ee6c63b-4eab-4748-b74a-d1dc22fc1a24/IncomingWebhook/f19708bafffa46929a17d464822631c2/10ad1ee1-0da7-4eb2-846f-878bb69c550e
